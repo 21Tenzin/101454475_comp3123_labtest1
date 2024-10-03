@@ -3,7 +3,7 @@ const path = require('path');
 
 for (let i = 0; i < 10; i++) {
     const filePath = path.join(__dirname, `log${i}.txt`);
-    const content = 'This is Log ' + i + '\n';
+    const content = 'This is Log ' + i ;
 
     fs.writeFile(filePath, content, (err) => {
         if (err) {
